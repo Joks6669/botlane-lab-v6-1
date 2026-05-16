@@ -507,3 +507,6 @@ function MiniStat({ label, valeur }: { label: string; valeur: string | number })
 function Badge({ valeur }: { valeur: string }) {
   return <span className={`badge ${valeur.toLowerCase()}`}>{valeur}</span>;
 }
+function arrondi(nombre: number, decimals = 0) {
+  return Number(nombre.toFixed(decimals));
+}
